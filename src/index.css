@@ -1,0 +1,124 @@
+:root {
+  --primary-cl: rgb(253, 125, 85);
+  --secondary-cl: rgba(252, 174, 94, 0.9);
+  --tertiary-cl: rgba(243, 62, 95,1); /*f33e5f*/
+  --black-cl: rgba(9, 19, 39, 1); /*091327*/
+  --gray-cl: rgba(136, 148, 157, 1); /*88949D*/
+  --white-cl: rgba(255, 255, 255, 1); /*FFF*/
+  --orange-cl: rgba(246, 137, 47, 1); /*F6892F*/
+
+  --grey-cl: rgba(249, 249, 249, 1); /*f9f9f9*/
+
+  --gradient-cl: linear-gradient(90deg, var(--secondary-cl) 0%, var(--primary-cl) 100%);
+  --gradient-cl-secondary: var(--secondary-cl, linear-gradient(90deg, var(--secondary-cl) 0%, var(--primary-cl) 100%));
+  --gradient-cl-tertiary: var(--tertiary-cl, linear-gradient(90deg, var(--secondary-cl) 0%, var(--primary-cl) 100%));
+  --box-shadown-btn-outlined: 0px 6px 14.6px -5px rgba(0, 0, 0, 0.16);
+  --box-shadown-btn-contained: 0px 8px 24px -4px rgba(0, 0, 0, 0.12);
+  --box-shadown-1: 0px 4px 12px 0px #e0e0e0;
+  --box-shadown-focus-input: 0px 0px 12px 0px rgba(228, 31, 4, 0.5);
+  --border-cl-1: #dae7e7;
+  --border-cl-2: #e0e0e0;
+
+  --container-lg: calc(1200px + 30px);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  /* max-width: 1600px; */
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color: var(--black-cl);
+}
+input[type='checkbox'] {
+  accent-color: var(--tertiary-cl);
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--black-cl);
+}
+ul,
+li {
+  list-style: none;
+}
+.strokeAnim {
+  animation: strokeAnim 15s linear infinite;
+}
+section {
+  padding: 60px 0px;
+  overflow: hidden;
+}
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+h2 {
+  font-family: Figtree;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 40.8px */
+  letter-spacing: -0.34px;
+  text-align: center;
+}
+@keyframes strokeAnim {
+  0% {
+    stroke-dasharray: 4;
+    stroke-dashoffset: 10;
+  }
+  50% {
+    stroke-dasharray: 4;
+    stroke-dashoffset: 190;
+  }
+  100% {
+    stroke-dasharray: 4;
+    stroke-dashoffset: 10;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  section {
+    padding: 48px 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  section {
+    padding: 24px 0;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}

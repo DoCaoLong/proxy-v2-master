@@ -1,0 +1,126 @@
+.contact__title {
+  max-width: 544px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.16px;
+  margin-top: 8px;
+  color: var(--gray-cl);
+}
+.contact__warp {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+}
+.contact__left,
+.contact__right {
+  width: 50%;
+}
+.contact__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__text {
+  font-family: Figtree;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+}
+.contact__desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.16px;
+  color: var(--gray-cl);
+  margin-top: 12px;
+}
+.contact__desc a {
+  text-decoration-line: underline;
+  color: var(--tertiary-cl);
+  cursor: pointer;
+}
+.contact__left__head div:nth-child(2) {
+  margin-top: 32px;
+}
+.contact__left__bottom__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact__left__bottom__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* right */
+.contact__right {
+  border-radius: 16px;
+  background: var(--white-cl);
+  box-shadow: var(--box-shadown-1);
+  padding: 40px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact__right input[type='text'],
+.contact__right textarea {
+  border-radius: 8px;
+  border: 1.5px solid var(--border-cl-1);
+  background: var(--grey-cl);
+  padding: 12px 16px;
+  height: 48px;
+  width: 100%;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 20.8px */
+}
+.contact__right input[type='text']:focus,
+.contact__right textarea:focus {
+  border-radius: 8px;
+  border: 1.4px solid var(--tertiary-cl);
+  background: var(--white-cl);
+  box-shadow: var(--box-shadown-focus-input);
+}
+.contact__right input::placeholder,
+.contact__right textarea::placeholder {
+  color: var(--gray-cl);
+}
+.contact__right textarea {
+  height: 111px;
+  resize: none;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .contact__warp {
+    flex-direction: column;
+  }
+  .contact__left,
+  .contact__right {
+    width: 100%;
+  }
+  .contact__left {
+    gap: 24px;
+  }
+  .contact__right input[type='text'],
+  .contact__right textarea {
+    font-size: 16px;
+  }
+  .contact__right {
+    padding: 24px;
+  }
+}

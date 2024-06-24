@@ -1,0 +1,66 @@
+.hear__title {
+  text-align: left;
+}
+.hear__wrap {
+  border-radius: 16px;
+  background: var(--white--cl);
+  /* box-shadow: var(--box-shadown-1); */
+  border: 1px solid var(--border-cl-2);
+  padding: 40px;
+  display: flex;
+  /* justify-content: space-between; */
+  position: relative;
+  max-width: 788px;
+  margin: 0 auto;
+}
+.hear__left {
+  width: 54%;
+}
+.hear__right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 53%;
+}
+.hear__text {
+  font-family: Figtree;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 30px */
+  margin-top: 32px;
+}
+.hear__desc {
+  margin-top: 12px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.16px;
+  color: var(--gray-cl);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .hear__wrap {
+    padding: 24px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .hear__right {
+    margin: 0;
+    position: unset;
+    transform: unset;
+  }
+  .hear__left {
+    width: 100%;
+  }
+  .hear__wrap {
+    flex-direction: column;
+  }
+  .hear__text {
+    margin-top: 14px;
+    font-size: 18px;
+  }
+}
