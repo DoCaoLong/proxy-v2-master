@@ -1,0 +1,96 @@
+{
+  "choose": {
+    "chooseYourPlan": "Chọn kế hoạch của bạn",
+    "residentialProxies": "Proxy cư trú",
+    "description": "Mở khóa sức mạnh của các proxy cư trú với các giải pháp tiên tiến của chúng tôi được điều chỉnh cho nhu cầu duyệt web của bạn. Trải nghiệm sự ẩn danh liền mạch và đáng tin cậy với các dịch vụ proxy chất lượng cao của chúng tôi.",
+    "userCases": "Các trường hợp sử dụng",
+    "adVerification": "Xác minh quảng cáo",
+    "serpTracking": "Theo dõi SERP",
+    "socialMedia": "Mạng xã hội",
+    "brandProtection": "Bảo vệ thương hiệu",
+    "planPriceStartFrom": "Giá kế hoạch bắt đầu từ",
+    "highQuality": "Chất lượng cao",
+    "countryTargeting": "Nhắm mục tiêu quốc gia",
+    "dedicatedResidentialProxies": "Proxy cư trú dành riêng",
+    "httpSupport": "Hỗ trợ HTTP(s) và SOCKS5",
+    "nonExpiringTraffic": "Lưu lượng không hết hạn",
+    "buyNow": "Mua ngay"
+  },
+  "contact": {
+    "contactUs": "Liên hệ với chúng tôi",
+    "contactTitle": "Chào bạn, cần giúp đỡ từ người thật, không phải bot? Kết nối với chúng tôi để được hỗ trợ nhanh chóng và hiệu quả",
+    "gotQuestion": "Có câu hỏi nào?",
+    "weAreHereToHelp": "Chúng tôi ở đây để giúp đỡ và trả lời bất kỳ câu hỏi nào bạn có thể có. Chúng tôi mong được nghe từ bạn. Điền vào biểu mẫu này hoặc gửi email cho chúng tôi tại",
+    "greaterCooperation": "Hợp tác nhiều hơn?",
+    "contactSalesTeam": "Gửi email để liên hệ với đội ngũ bán hàng",
+    "name": "Tên",
+    "email": "Email",
+    "leaveYourMessage": "Để lại tin nhắn của bạn",
+    "acceptPrivatePolicy": "Chấp nhận Chính sách Bảo mật của chúng tôi",
+    "sendNow": "GỬI NGAY"
+  },
+  "download": {
+    "downloadApp": "Tải xuống ứng dụng Proxy",
+    "macOS": "MacOS",
+    "macOSDesc": "Hệ điều hành MacOS 10.1 trở lên",
+    "windowOS": "WindowOS",
+    "windowOSDesc": "Hệ điều hành WindowOS 12.1 trở lên",
+    "downloadNow": "Tải xuống ngay"
+  },
+  "hear": {
+    "hearAboutUs": "Nghe về chúng tôi",
+    "ethicallySourced": "100M+ Proxy cư trú có nguồn gốc hợp pháp",
+    "largeProxyPool": "Một số lượng lớn proxy có nghĩa là bạn có quyền truy cập vào các địa chỉ IP cư trú từ khắp nơi trên thế giới, vì vậy bạn có thể dễ dàng vượt qua các khối địa lý."
+  },
+  "hero": {
+    "title": "Proxy cư trú P2P",
+    "subtitle": "Chia sẻ internet và kiếm tiền trực tuyến",
+    "description": "Chúng tôi cung cấp nền tảng trao đổi proxy hàng đầu thế giới với hỗ trợ kết nối P2P. Chia sẻ Internet của bạn và Kiếm tiền trực tuyến dễ dàng.",
+    "getStarted": "Bắt đầu",
+    "asSeenOn": "Được thấy trên:",
+    "proxyTransparent": "Proxy trong suốt",
+    "proxyTransparentDesc": "Đảm bảo quyền riêng tư bằng cách không ghi lại hoạt động của người dùng. Tối ưu hóa lưu lượng mạng và cải thiện trải nghiệm người dùng.",
+    "noUsageLogs": "Không có nhật ký sử dụng",
+    "noUsageLogsDesc": "Tối đa hóa tốc độ để có trải nghiệm duyệt web tối ưu với thời gian phản hồi nhanh hơn.",
+    "highSpeed": "Tốc độ cao",
+    "highSpeedDesc": "Proxy trong suốt là giải pháp lý tưởng cho những ai muốn nâng cao bảo mật và quản lý mạng."
+  },
+  "our": {
+    "featuresServices": "Các tính năng và dịch vụ của chúng tôi",
+    "description": "Chúng tôi mang đến cho bạn một dịch vụ proxy Peer-to-Peer (P2P) sáng tạo, không chỉ cải thiện trải nghiệm duyệt web của bạn",
+    "monetizeYourBandwidth": "Kiếm tiền từ băng thông của bạn",
+    "monetizeDesc": "Kiếm tiền bằng cách chia sẻ băng thông internet không sử dụng của bạn.",
+    "proxyP2PResidential": "Proxy cư trú P2P",
+    "proxyP2PDesc": "Dịch vụ proxy P2P của chúng tôi cho phép bạn kiếm tiền từ kết nối của mình một cách dễ dàng.",
+    "secureAndPrivate": "Bảo mật và riêng tư",
+    "secureDesc": "Tất cả dữ liệu truyền qua các proxy P2P của chúng tôi đều được mã hóa, đảm bảo rằng thông tin cá nhân của bạn được bảo vệ."
+  },
+  "proxy": {
+    "title": "Trường hợp sử dụng Proxy",
+    "description": "Một vài trong số nhiều trường hợp sử dụng có thể được giải quyết với các sản phẩm của chúng tôi",
+    "dataCollection": "Thu thập dữ liệu",
+    "brandProtection": "Bảo vệ thương hiệu",
+    "etsy": "Etsy",
+    "marketingResearch": "Nghiên cứu thị trường",
+    "seoOptimization": "Tối ưu hóa SEO",
+    "youtube": "Youtube",
+    "pricingMonitoring": "Giám sát giá cả",
+    "socialMedia": "Mạng xã hội",
+    "reddit": "Reddit",
+    "verification": "Xác minh",
+    "instagram": "Instagram",
+    "google": "Google",
+    "snapUpMerchandise": "Mua hàng nhanh",
+    "amazon": "Amazon",
+    "tiktok": "Tiktok"
+  },
+  "top": {
+    "title": "Vị trí hàng đầu",
+    "unitedStates": "Hoa Kỳ",
+    "unitedKingdom": "Vương quốc Anh",
+    "china": "Trung Quốc",
+    "germany": "Đức",
+    "canada": "Canada",
+    "france": "Pháp"
+  }
+}

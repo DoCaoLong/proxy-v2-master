@@ -1,13 +1,15 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import { Header } from './components/layout'
 import Footer from './components/layout/footer'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import HomePage from './page/home'
 import About from './page/about'
-import NotFound from './page/notFound'
 import Download from './page/dowload'
+import HomePage from './page/home'
+import NotFound from './page/notFound'
 
 const App: React.FC = () => {
+
+
   return (
     <>
       <Router>

@@ -1,29 +1,30 @@
+import { useTranslation } from 'react-i18next'
 import { svgs } from '../../../../assets/svg'
 import { Container } from '../../../../components/layout'
 import { Button } from '../../../../components/UI'
 import styles from './style.module.css'
+
 export function Contact() {
+  const { t } = useTranslation()
+
   return (
     <section className={styles.contact}>
       <Container maxWidth='lg'>
-        <h2>Contact Us Proxy </h2>
-        <p className={styles.contact__title}>
-          Hi, need help from real people, not bots? Connect us experts for quick, effective support
-        </p>
+        <h2>{t('contact.contactUs')}</h2>
+        <p className={styles.contact__title}>{t('contact.contactTitle')}</p>
         <div className={styles.contact__warp}>
           <div className={styles.contact__left}>
             <div className={styles.contact__left__head}>
               <div>
-                <p className={styles.contact__text}>Got a Question?</p>
+                <p className={styles.contact__text}>{t('contact.gotQuestion')}</p>
                 <p className={styles.contact__desc}>
-                  We’re here to help and answer any questions you might have. We look forward to hearing from you. Fill
-                  in this form or send as an email at<a href='#'> contact@proxy.com</a>
+                  {t('contact.weAreHereToHelp')} <a href='#'>contact@proxy.com</a>
                 </p>
               </div>
               <div>
-                <p className={styles.contact__text}>Greater cooperation?</p>
+                <p className={styles.contact__text}>{t('contact.greaterCooperation')}</p>
                 <p className={styles.contact__desc}>
-                  Send an email to contact the sales team <a href='#'>sales@proxy.com</a>
+                  {t('contact.contactSalesTeam')} <a href='#'>sales@proxy.com</a>
                 </p>
               </div>
             </div>
@@ -46,15 +47,15 @@ export function Contact() {
           </div>
           <div className={styles.contact__right}>
             <form className={styles.contact__form} action='#'>
-              <input placeholder='Name' type='text' />
-              <input placeholder='Gmail' type='text' />
-              <textarea placeholder='Leave Your Message' name='' id=''></textarea>
+              <input placeholder={t('contact.name')} type='text' />
+              <input placeholder={t('contact.email')} type='text' />
+              <textarea placeholder={t('contact.leaveYourMessage')} name='' id=''></textarea>
               <div className={styles.checkbox}>
-                <input checked type='checkbox' />
-                <p>Accept our Private Policy</p>
+                <input checked type='checkbox' readOnly />
+                <p>{t('contact.acceptPrivatePolicy')}</p>
               </div>
-              <Button width={'100%'} variant='contained'>
-                SEND NOW
+              <Button height={60} width={'100%'} variant='contained'>
+                {t('contact.sendNow')}
               </Button>
             </form>
           </div>

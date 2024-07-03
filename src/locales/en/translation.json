@@ -1,0 +1,97 @@
+{
+  "choose": {
+    "chooseYourPlan": "Choose Your Plan",
+    "residentialProxies": "Residential Proxies",
+    "description": "Unlock the power of residential proxies with our cutting-edge solutions tailored for your browsing needs. Experience seamless anonymity and reliability with our high-quality proxy services.",
+    "userCases": "User cases",
+    "adVerification": "Ad Verification",
+    "serpTracking": "SERP Tracking",
+    "socialMedia": "Social Media",
+    "brandProtection": "Brand Protection",
+    "planPriceStartFrom": "Plan price start from",
+    "highQuality": "High quality",
+    "countryTargeting": "Country targeting",
+    "dedicatedResidentialProxies": "Dedicated residential proxies",
+    "httpSupport": "HTTP(s) and SOCKS5 support",
+    "nonExpiringTraffic": "Non-Expiring Traffic",
+    "buyNow": "Buy Now"
+  },
+  "contact": {
+    "contactUs": "Contact Us Proxy",
+    "contactTitle": "Hi, need help from real people, not bots? Connect us experts for quick, effective support",
+    "gotQuestion": "Got a Question?",
+    "weAreHereToHelp": "We’re here to help and answer any questions you might have. We look forward to hearing from you. Fill in this form or send as an email at",
+    "greaterCooperation": "Greater cooperation?",
+    "contactSalesTeam": "Send an email to contact the sales team",
+    "name": "Name",
+    "email": "Email",
+    "leaveYourMessage": "Leave Your Message",
+    "acceptPrivatePolicy": "Accept our Private Policy",
+    "sendNow": "SEND NOW"
+  },
+  "download": {
+    "downloadApp": "Download Proxy app",
+    "macOS": "MacOS",
+    "macOSDesc": "MacOS Operating system 10.1 or higher",
+    "windowOS": "WindowOS",
+    "windowOSDesc": "WindowOS Operating system 12.1 or higher",
+    "downloadNow": "Download Now"
+  },
+  "hear": {
+    "hearAboutUs": "Hear About us",
+    "ethicallySourced": "100M+ ethically sourced Residential Proxy pool",
+    "largeProxyPool": "A large proxy pool means you receive access to Residential IP addresses from all over the world, so you can easily overcome geo-location blocks."
+  },
+  "hero": {
+    "title": "Residential Proxies P2P",
+    "subtitle": "Share internet and make money online",
+    "description": "We offer the world's leading proxy exchange platform with support for P2P connections. Share Your Internet and Make Money Online Easily.",
+    "getStarted": "Get Started",
+    "asSeenOn": "As seen on:",
+    "proxyTransparent": "Proxy Transparent",
+    "proxyTransparentDesc": "Ensures privacy by not recording user activities. Optimize network traffic and improve user experience.",
+    "noUsageLogs": "No usage logs",
+    "noUsageLogsDesc": "Maximizes speed for an optimal browsing experience with lower ping times for faster response.",
+    "highSpeed": "High Speed",
+    "highSpeedDesc": "A Transparent Proxy is an ideal solution for those who want to enhance security and network management."
+  },
+  "our": {
+    "featuresServices": "Our Features & Services",
+    "description": "We bring you an innovative Peer-to-Peer (P2P) proxy service that not only enhances your internet browsing experience",
+    "monetizeYourBandwidth": "Monetize Your Bandwidth",
+    "monetizeDesc": "Earn money by sharing your unused internet bandwidth.",
+    "proxyP2PResidential": "Proxy P2P Residential",
+    "proxyP2PDesc": "Our P2P proxy service enables you to monetize your connection effortlessly.",
+    "secureAndPrivate": "Secure and Private",
+    "secureDesc": "All data passing through our P2P proxies is encrypted, ensuring that your personal information remains protected."
+  },
+  "proxy": {
+    "title": "Proxy Usercase",
+    "description": "Few among the multiple use cases that could be solved with our products",
+    "dataCollection": "Data collection",
+    "brandProtection": "Brand Protection",
+    "etsy": "Etsy",
+    "marketingResearch": "Marketing Research",
+    "seoOptimization": "SEO Optimization",
+    "youtube": "Youtube",
+    "pricingMonitoring": "Pricing Monitoring",
+    "socialMedia": "Social Media",
+    "reddit": "Reddit",
+    "verification": "Verification",
+    "instagram": "Instagram",
+    "google": "Google",
+    "snapUpMerchandise": "Snap Up Merchandise",
+    "amazon": "Amazon",
+    "tiktok": "Tiktok"
+  },
+  "top": {
+    "title": "Top Location",
+    "unitedStates": "United States",
+    "unitedKingdom": "United Kingdom",
+    "china": "China",
+    "germany": "Germany",
+    "canada": "Canada",
+    "france": "France",
+    "totalIPs": "{{count}} IPs"
+  }
+}

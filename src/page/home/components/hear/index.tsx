@@ -3,8 +3,12 @@ import { Container } from '../../../../components/layout'
 import lottie from 'lottie-web'
 import { lottieAnimations } from '../../../../assets/lottie'
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
+
 export function Hear() {
+  const { t } = useTranslation()
   const animationContainer = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     if (animationContainer.current) {
       lottie.loadAnimation({
@@ -25,17 +29,15 @@ export function Hear() {
       }
     }
   }, [])
+
   return (
     <section className={styles.hear}>
       <Container maxWidth='lg'>
         <div className={styles.hear__wrap}>
           <div className={styles.hear__left}>
-            <h2 className={styles.hear__title}>Hear About us </h2>
-            <p className={styles.hear__text}>100M+ ethically sourced Residential Proxy pool</p>
-            <p className={styles.hear__desc}>
-              A large proxy pool means you receive access to Residential IP addresses from all over the world, so you
-              can easily overcome geo-location blocks.
-            </p>
+            <h2 className={styles.hear__title}>{t('hear.hearAboutUs')}</h2>
+            <p className={styles.hear__text}>{t('hear.ethicallySourced')}</p>
+            <p className={styles.hear__desc}>{t('hear.largeProxyPool')}</p>
           </div>
           <div className={styles.hear__right}>
             <div ref={animationContainer} style={{ width: '255px', height: '264px' }}></div>
