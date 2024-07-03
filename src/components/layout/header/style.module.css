@@ -141,10 +141,9 @@
   .navbarMenu {
     height: 100svh;
     background-color: var(--grey-cl);
-    z-index: 10;
     width: 100%;
     position: fixed;
-    top: 72px;
+    top: 71px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -181,22 +180,22 @@
 }
 @media screen and (max-width: 1023.98px) {
   .header.active {
-  border-radius: 0;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 12px -6px;
-  transform-origin: unset;
-  opacity: 1;
-  margin: 0;
-  margin-top: 0;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 12px -6px;
+    transform-origin: unset;
+    opacity: 1;
+    margin: 0;
+    margin-top: 0;
   }
-  
+
   .navbarMenuItem a {
     font-size: 18px;
   }
   .header .navbarMenuLink {
-  padding: 24px;
+    padding: 24px;
   }
   .header .navbarMenu {
-  gap: 0;
+    gap: 0;
   }
   .header {
     padding: 15px 0;
@@ -204,8 +203,5 @@
   }
 }
 
-
 @media screen and (max-width: 767.98px) {
-
-
 }

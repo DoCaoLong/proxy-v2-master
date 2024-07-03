@@ -6,15 +6,15 @@
 }
 
 .xs {
-  max-width: 444px;
+  max-width: var(--container-xs);
 }
 
 .sm {
-  max-width: 600px;
+  max-width: var(--container-sm);
 }
 
 .md {
-  max-width: 960px;
+  max-width: var(--container-md);
 }
 
 .lg {
@@ -22,7 +22,7 @@
 }
 
 .xl {
-  max-width: 1920px;
+  max-width: var(--container-xl);
 }
 
 .fluid {

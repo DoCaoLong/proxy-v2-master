@@ -1,28 +1,25 @@
 import './App.css'
 import { Header } from './components/layout'
 import Footer from './components/layout/footer'
-import { Hero } from './components/page'
-import Chose from './components/page/chose'
-import Contact from './components/page/contact'
-import Download from './components/page/download'
-import Hear from './components/page/hear'
-import Our from './components/page/our'
-import Proxy from './components/page/proxy'
-import Top from './components/page/top'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './page/home'
+import About from './page/about'
+import NotFound from './page/notFound'
+import Download from './page/dowload'
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <Top />
-      <Our />
-      <Chose />
-      <Proxy />
-      <Download />
-      <Hear />
-      <Contact />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/download' element={<Download />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   )
 }

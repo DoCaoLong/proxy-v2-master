@@ -1,3 +1,4 @@
+// home
 import decarationLeftHero from './decorationLeftHero.svg'
 import decarationRightHero from './decorationRightHero.svg'
 import dataColection from './dataColection.svg'
@@ -30,8 +31,25 @@ import china from './china.svg'
 import germany from './germany.svg'
 import canada from './canada.svg'
 import france from './france.svg'
+// about
+import aboutChart from './about-chart.svg'
+import aboutDrawn from './about-hand-drawn.svg'
+import aboutHome from './about-home.svg'
+import aboutOur from './about-our.svg'
+import aboutPen from './about-pen.svg'
+import aboutStart from './about-start.svg'
+import aboutUs from './about-us.svg'
+import aboutUser from './about-user.svg'
 
 export const svgs = {
+  aboutChart,
+  aboutDrawn,
+  aboutHome,
+  aboutOur,
+  aboutPen,
+  aboutStart,
+  aboutUs,
+  aboutUser,
   uk,
   us,
   china,
