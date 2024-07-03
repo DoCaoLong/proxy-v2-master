@@ -65,6 +65,18 @@
   width: 100%;
 }
 
+.navbarMenuItem.active .navbarMenuLink{
+  color: var(--orange-text-cl);
+  position: relative;
+}
+.navbarMenuItem.active .navbarMenuLink::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--orange-text-cl);
+  bottom: -8px;
+}
 .navbarMenuLink {
   text-decoration: none;
   color: var(--black-cl);
@@ -78,7 +90,7 @@
 }
 
 .navbarMenuLink:hover {
-  color: var(--primary-cl);
+  color: var(--orange-text-cl);
 }
 
 .menuToggle {
@@ -206,6 +218,11 @@
   .header {
     padding: 15px 0;
     margin: 0;
+  }
+  .navbarMenuItem.active .navbarMenuLink::before{
+    position: unset;
+    width: 0;
+    height: 0;
   }
 }
 

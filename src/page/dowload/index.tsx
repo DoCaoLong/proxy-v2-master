@@ -1,11 +1,14 @@
-import React from 'react'
-import { Ask, Support } from './components'
+import { Download } from '../home/components'
+import { Ask } from './components'
+import styles from './style.module.css'
 
-export default function Download() {
+export default function DownloadPage() {
   return (
-    <>
-      <Support/>
-      <Ask/>
-    </>
+    <section className={styles.downloadPages}>
+      <Download
+        title='Support multiple versions of Windows, Mac OS'
+      />
+      <Ask />
+    </section>
   )
 }

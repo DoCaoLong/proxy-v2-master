@@ -6,12 +6,13 @@ import classNames from 'classnames'
 import { imgs } from '../../../assets/imgs'
 import { LanguageSwitcher } from '../languageSwitcher'
 import { useMediaQuery } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export function Header() {
   const headerRef = useRef<HTMLDivElement | null>(null)
   const [width, setWidth] = useState('1200px')
   const IS_MB = useMediaQuery('(max-width:767px)')
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +70,7 @@ export function Header() {
             </div>
 
             <ul className={styles.navbarMenu}>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='#'
@@ -78,7 +79,7 @@ export function Header() {
                   Pricing
                 </Link>
               </li>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='#'
@@ -87,7 +88,7 @@ export function Header() {
                   Proxies
                 </Link>
               </li>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='#'
@@ -96,7 +97,7 @@ export function Header() {
                   Case study
                 </Link>
               </li>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='#'
@@ -105,7 +106,7 @@ export function Header() {
                   Affiliate
                 </Link>
               </li>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '/download' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='/download'
@@ -114,7 +115,7 @@ export function Header() {
                   Download
                 </Link>
               </li>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '/about' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='/about'
@@ -123,7 +124,7 @@ export function Header() {
                   About us
                 </Link>
               </li>
-              <li className={styles.navbarMenuItem}>
+              <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
                 <Link
                   onClick={handleRemoveHambuger}
                   to='#'

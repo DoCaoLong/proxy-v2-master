@@ -10,6 +10,10 @@
   justify-content: center;
   gap: 24px;
 }
+.download h2{
+  max-width: 577px;
+  margin: 0 auto;
+}
 .download__card {
   border-radius: 16px;
   border-top: 2px solid transparent;
