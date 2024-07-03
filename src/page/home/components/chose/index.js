@@ -1,0 +1,24 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useState } from 'react';
+import styles from './style.module.css';
+import classNames from 'classnames';
+import { Container } from '../../../../components/layout';
+import { svgs } from '../../../../assets/svg';
+import { Button } from '../../../../components/UI';
+export function Chose() {
+    const [checkedState, setCheckedState] = useState({
+        highQuality: true,
+        countryTargetting: true,
+        dedicatedProxies: true,
+        httpSupport: true,
+        nonExpiringTraffic: true
+    });
+    const handleCheckboxChange = (event) => {
+        const { name, checked } = event.target;
+        setCheckedState({
+            ...checkedState,
+            [name]: checked
+        });
+    };
+    return (_jsx("section", { className: styles.chose, children: _jsx(Container, { maxWidth: 'lg', children: _jsxs("div", { className: styles.chose__wrap, children: [_jsxs("div", { className: styles.chose__left, children: [_jsx("h2", { className: styles.chose__title, children: "Chose Your Plan" }), _jsxs("div", { className: styles.chose__residential, children: [_jsx("p", { className: styles.chose__text, children: "Residential Proxies" }), _jsx("p", { className: styles.chose__desc, children: "Unlock the power of residential proxies with our cutting-edge solutions tailored for your browsing needs. Experience seamless anonymity and reliability with our high-quality proxy services." })] }), _jsxs("div", { className: styles.chose__userCase, children: [_jsx("p", { className: classNames(styles.chose__text, styles.tertiary__cl), children: "User cases" }), _jsxs("div", { className: styles.chose__userCase__list, children: [_jsxs("div", { className: styles.chose__userCase__row, children: [_jsxs("div", { className: styles.chose__userCase__item, children: [_jsx("img", { src: svgs.arrow, alt: '' }), _jsx("p", { className: styles.chose__userCase__name, children: "Ad Verification" })] }), _jsxs("div", { className: styles.chose__userCase__item, children: [_jsx("img", { src: svgs.arrow, alt: '' }), _jsx("p", { className: styles.chose__userCase__name, children: "SERP Tracking" })] })] }), _jsxs("div", { className: styles.chose__userCase__row, children: [_jsxs("div", { className: styles.chose__userCase__item, children: [_jsx("img", { src: svgs.arrow, alt: '' }), _jsx("p", { className: styles.chose__userCase__name, children: "Social Media" })] }), _jsxs("div", { className: styles.chose__userCase__item, children: [_jsx("img", { src: svgs.arrow, alt: '' }), _jsx("p", { className: styles.chose__userCase__name, children: "Brand Protection" })] })] })] })] })] }), _jsxs("div", { className: styles.chose__right, children: [_jsxs("div", { className: styles.chose__right__top, children: [_jsx("div", { className: styles.chose__right__head, children: _jsx("p", { children: "Plan price start from" }) }), _jsxs("div", { className: styles.chose__right__price, children: [_jsx("p", { children: "$2.00" }), _jsx("span", { children: "/ GB" })] })] }), _jsx("div", { className: styles.chose__right__mid, children: _jsxs("div", { className: styles.chose__right__list, children: [_jsxs("div", { className: styles.chose__right__item, children: [_jsx("input", { name: 'highQuality', type: 'checkbox', checked: checkedState.highQuality, onChange: handleCheckboxChange }), _jsxs("p", { children: ["High quality", _jsx("span", { className: styles.text__gradient__tertiary, children: " 7M+ IPs" })] })] }), _jsxs("div", { className: styles.chose__right__item, children: [_jsx("input", { name: 'countryTargetting', type: 'checkbox', checked: checkedState.countryTargetting, onChange: handleCheckboxChange }), _jsxs("p", { children: [_jsx("span", { className: styles.text__gradient__secondary, children: " 195+ " }), "country targetting"] })] }), _jsxs("div", { className: styles.chose__right__item, children: [_jsx("input", { name: 'dedicatedProxies', type: 'checkbox', checked: checkedState.dedicatedProxies, onChange: handleCheckboxChange }), _jsx("p", { children: "Dedicated residential proxies" })] }), _jsxs("div", { className: styles.chose__right__item, children: [_jsx("input", { name: 'httpSupport', type: 'checkbox', checked: checkedState.httpSupport, onChange: handleCheckboxChange }), _jsxs("p", { children: [_jsx("span", { className: styles.text__gradient__secondary, children: "HTTP(s) " }), "and", _jsx("span", { className: styles.text__gradient__tertiary, children: " SOCKS5 " }), "support"] })] }), _jsxs("div", { className: styles.chose__right__item, children: [_jsx("input", { name: 'nonExpiringTraffic', type: 'checkbox', checked: checkedState.nonExpiringTraffic, onChange: handleCheckboxChange }), _jsx("p", { children: "Non-Expricing Traffic" })] })] }) }), _jsx(Button, { width: '100%', variant: 'contained', children: "Buy Now" })] })] }) }) }));
+}
