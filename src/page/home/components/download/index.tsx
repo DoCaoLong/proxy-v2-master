@@ -4,14 +4,17 @@ import { imgs } from '../../../../assets/imgs'
 import { Container } from '../../../../components/layout'
 import { Button } from '../../../../components/UI'
 import styles from './style.module.css'
-
-export function Download() {
+interface IProps{
+  title?: string
+}
+export function Download(props: IProps) {
+  const { title = 'download.downloadApp' } = props
   const { t } = useTranslation()
 
   return (
     <section className={styles.download}>
       <Container maxWidth='lg'>
-        <h2>{t('download.downloadApp')}</h2>
+        <h2>{t(title)}</h2>
         <div className={styles.download__wrap}>
           <div className={classNames(styles.download__card)}>
             <img src={imgs.macos} alt='macos' />

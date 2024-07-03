@@ -40,8 +40,12 @@ import aboutPen from './about-pen.svg'
 import aboutStart from './about-start.svg'
 import aboutUs from './about-us.svg'
 import aboutUser from './about-user.svg'
+import minusCirlce from './minus-cirlce.svg'
+import addCircle from './add-circle.svg'
 
 export const svgs = {
+  minusCirlce,
+  addCircle,
   aboutChart,
   aboutDrawn,
   aboutHome,
