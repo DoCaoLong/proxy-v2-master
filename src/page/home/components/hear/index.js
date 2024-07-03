@@ -4,7 +4,9 @@ import { Container } from '../../../../components/layout';
 import lottie from 'lottie-web';
 import { lottieAnimations } from '../../../../assets/lottie';
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 export function Hear() {
+    const { t } = useTranslation();
     const animationContainer = useRef(null);
     useEffect(() => {
         if (animationContainer.current) {
@@ -25,5 +27,5 @@ export function Hear() {
             }
         };
     }, []);
-    return (_jsx("section", { className: styles.hear, children: _jsx(Container, { maxWidth: 'lg', children: _jsxs("div", { className: styles.hear__wrap, children: [_jsxs("div", { className: styles.hear__left, children: [_jsx("h2", { className: styles.hear__title, children: "Hear About us " }), _jsx("p", { className: styles.hear__text, children: "100M+ ethically sourced Residential Proxy pool" }), _jsx("p", { className: styles.hear__desc, children: "A large proxy pool means you receive access to Residential IP addresses from all over the world, so you can easily overcome geo-location blocks." })] }), _jsx("div", { className: styles.hear__right, children: _jsx("div", { ref: animationContainer, style: { width: '255px', height: '264px' } }) })] }) }) }));
+    return (_jsx("section", { className: styles.hear, children: _jsx(Container, { maxWidth: 'lg', children: _jsxs("div", { className: styles.hear__wrap, children: [_jsxs("div", { className: styles.hear__left, children: [_jsx("h2", { className: styles.hear__title, children: t('hear.hearAboutUs') }), _jsx("p", { className: styles.hear__text, children: t('hear.ethicallySourced') }), _jsx("p", { className: styles.hear__desc, children: t('hear.largeProxyPool') })] }), _jsx("div", { className: styles.hear__right, children: _jsx("div", { ref: animationContainer, style: { width: '255px', height: '264px' } }) })] }) }) }));
 }
