@@ -47,7 +47,11 @@
   width: 120px;
   cursor: pointer;
 }
-
+.navbarMenuBtns{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
 .navbarMenu {
   list-style: none;
   display: flex;
@@ -58,6 +62,7 @@
 
 .navbarMenuItem {
   height: 100%;
+  width: 100%;
 }
 
 .navbarMenuLink {
@@ -69,6 +74,7 @@
   align-items: center;
   padding: 16px;
   transition: color 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .navbarMenuLink:hover {

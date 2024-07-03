@@ -4,16 +4,20 @@ import styles from './style.module.css'
 import { Button } from '../../UI'
 import classNames from 'classnames'
 import { imgs } from '../../../assets/imgs'
+import { LanguageSwitcher } from '../languageSwitcher'
+import { useMediaQuery } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 export function Header() {
   const headerRef = useRef<HTMLDivElement | null>(null)
   const [width, setWidth] = useState('1200px')
-console.log(width)
+  const IS_MB = useMediaQuery('(max-width:767px)')
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
       const maxScroll = 100
-      const newWidth = Math.max(1000, 1200 - (200 * scrollY) / maxScroll)
+      const newWidth = Math.max(1070, 1200 - (100 * scrollY) / maxScroll)
 
       setWidth(`${newWidth}px`)
 
@@ -59,50 +63,86 @@ console.log(width)
                 <span className={styles.line}></span>
                 <span className={styles.line}></span>
               </div>
-              <div className={styles.navbarLogo}>
+              <Link to='/' className={styles.navbarLogo}>
                 <img src={imgs.logo} alt='logo' />
-              </div>
+              </Link>
             </div>
 
             <ul className={styles.navbarMenu}>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='#'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='#'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   Proxies
-                </a>
+                </Link>
               </li>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='#'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   Case study
-                </a>
+                </Link>
               </li>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='#'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   Affiliate
-                </a>
+                </Link>
               </li>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='/download'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   Download
-                </a>
+                </Link>
               </li>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='/about'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   About us
-                </a>
+                </Link>
               </li>
               <li className={styles.navbarMenuItem}>
-                <a onClick={handleRemoveHambuger} href='#' className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                <Link
+                  onClick={handleRemoveHambuger}
+                  to='#'
+                  className={classNames(styles.navbarMenuLink, styles.textSM)}
+                >
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li className={styles.navbarMenuItem}>
+                <div onClick={handleRemoveHambuger} className={classNames(styles.navbarMenuLink, styles.textSM)}>
+                  {IS_MB && <LanguageSwitcher />}
+                </div>
               </li>
             </ul>
           </div>
-          <Button variant={width === "1000px" ? "contained"  : "outlined"}>Login Dashboard</Button>
+          <div className={styles.navbarMenuBtns}>
+            {!IS_MB && <LanguageSwitcher />}
+            <Button variant={width === '1070px' ? 'contained' : 'outlined'}>Login Dashboard</Button>
+          </div>
         </div>
       </Container>
     </header>

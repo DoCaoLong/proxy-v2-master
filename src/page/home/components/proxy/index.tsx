@@ -1,13 +1,15 @@
-import { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
-import { imgs } from '../../../../assets/imgs';
-import { svgs } from '../../../../assets/svg';
-import { Container } from '../../../../components/layout';
-import styles from './style.module.css';
-import lottieAnimation from '../../../../assets/lottie/test.json';
+import React, { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
+import lottie from 'lottie-web'
+import { imgs } from '../../../../assets/imgs'
+import { svgs } from '../../../../assets/svg'
+import { Container } from '../../../../components/layout'
+import styles from './style.module.css'
+import lottieAnimation from '../../../../assets/lottie/test.json'
 
 export function Proxy() {
-  const animationContainer = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation()
+  const animationContainer = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (animationContainer.current) {
@@ -20,99 +22,99 @@ export function Proxy() {
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }
-      });
+      })
     }
 
     return () => {
       if (animationContainer.current) {
-        lottie.destroy();
+        lottie.destroy()
       }
-    };
-  }, []);
+    }
+  }, [])
 
   const data = [
     {
       id: 1,
       img: svgs.dataColection,
-      text: 'Data collection'
+      text: t('proxy.dataCollection')
     },
     {
       id: 6,
       img: svgs.brand,
-      text: 'Brand Protection'
+      text: t('proxy.brandProtection')
     },
     {
       id: 11,
       img: svgs.etsy,
-      text: 'Etsy'
+      text: t('proxy.etsy')
     },
     {
       id: 2,
       img: svgs.marketing,
-      text: 'Marketing Research'
+      text: t('proxy.marketingResearch')
     },
     {
       id: 7,
       img: svgs.seo,
-      text: 'SEO Optimization'
+      text: t('proxy.seoOptimization')
     },
     {
       id: 12,
       img: imgs.youtube,
-      text: 'Youtube'
+      text: t('proxy.youtube')
     },
     {
       id: 3,
       img: svgs.pricing,
-      text: 'Pricing Monitoring'
+      text: t('proxy.pricingMonitoring')
     },
     {
       id: 8,
       img: svgs.socialMedia,
-      text: 'Social Media'
+      text: t('proxy.socialMedia')
     },
     {
       id: 13,
       img: imgs.reddit,
-      text: 'Reddit'
+      text: t('proxy.reddit')
     },
     {
       id: 4,
       img: svgs.veri,
-      text: 'Verification'
+      text: t('proxy.verification')
     },
     {
       id: 9,
       img: svgs.instagram,
-      text: 'Instagram'
+      text: t('proxy.instagram')
     },
     {
       id: 14,
       img: imgs.gg,
-      text: 'Google'
+      text: t('proxy.google')
     },
     {
       id: 5,
       img: svgs.snap,
-      text: 'Snap Up Merchandise'
+      text: t('proxy.snapUpMerchandise')
     },
     {
       id: 10,
       img: imgs.amazon,
-      text: 'Amazon'
+      text: t('proxy.amazon')
     },
     {
       id: 15,
       img: imgs.tiktok,
-      text: 'Tiktok'
+      text: t('proxy.tiktok')
     }
-  ];
+  ]
 
   return (
     <section className={styles.proxy}>
       <Container maxWidth='lg'>
-        <h2>Proxy Usercase</h2>
-        <p className={styles.proxy__desc}>Few among the multiple use cases that could be solved with our products</p>
+        <h2>{t('proxy.title')}</h2>
+        <p className={styles.proxy__desc}>{t('proxy.description')}</p>
         <div className={styles.proxy__wrap}>
           <div className={styles.proxy__img}>
             <div ref={animationContainer} style={{ width: '480px', height: '480px' }}></div>
@@ -121,15 +123,15 @@ export function Proxy() {
             <img src={imgs.usercaseDeco} alt='' />
           </div>
           <div className={styles.proxy__list}>
-            {data.map((item, index: number) => (
-              <div key={index} className={styles.proxy__item}>
-                <img src={item?.img} alt='' />
-                <p>{item?.text}</p>
+            {data.map((item) => (
+              <div key={item.id} className={styles.proxy__item}>
+                <img src={item.img} alt={item.text} />
+                <p>{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </Container>
     </section>
-  );
+  )
 }

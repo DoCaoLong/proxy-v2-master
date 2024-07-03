@@ -26,7 +26,7 @@
 }
 .download__card:hover,
 .download__card.active {
-  /* border-top: 2px solid var(--1st-1st, #f33e5f); */
+  border-top: 2px solid var(--tertiary-cl);
   box-shadow: 0px 4px 12px 0px #e0e0e0;
   box-shadow: var(--box-shadown-1);
 }

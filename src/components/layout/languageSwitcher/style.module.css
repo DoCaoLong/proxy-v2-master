@@ -1,0 +1,35 @@
+.languageSwitcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: var(--gradient-cl);
+  padding: 6px;
+  border-radius: 100px;
+}
+
+.languageInput {
+  display: none;
+}
+
+.flag {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.flag img {
+  height: 20px;
+  transform: scale(0.9);
+
+}
+
+.flag:hover {
+  transform: scale(1.2);
+}
+
+.languageInput:checked + .flag {
+  transform: scale(1.2);
+  background-color: var(--white-cl);
+  border-radius: 100px;
+  padding: 2px;
+}

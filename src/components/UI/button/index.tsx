@@ -10,13 +10,23 @@ interface IProps {
   disabled?: boolean
   loading?: boolean
   children?: ReactNode
+  height?: string | number
 }
 
 type Variant = 'contained' | 'outlined' | 'text'
 type Color = 'primary' | 'secondary'
 
 export function Button(props: IProps) {
-  const { text, width, color = 'primary', variant = 'contained', disabled = false, loading = false, children } = props
+  const {
+    text,
+    width,
+    height,
+    color = 'primary',
+    variant = 'contained',
+    disabled = false,
+    loading = false,
+    children
+  } = props
 
   return (
     <button
@@ -27,7 +37,7 @@ export function Button(props: IProps) {
         [styles.primary]: color === 'primary',
         [styles.secondary]: color === 'secondary'
       })}
-      style={width ? { width } : { width: 'max-content' }}
+      style={{ width: width || 'max-content', height: height }}
       disabled={loading === true || disabled === true}
     >
       {loading ? 'Loading...' : children || text}
