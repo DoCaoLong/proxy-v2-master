@@ -1,70 +1,109 @@
 import styles from './style.module.css'
 import { Container } from '../container'
 import { svgs } from '../../../assets/svg'
-import { imgs } from '../../../assets/imgs'
+import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <section className={styles.footer}>
       <Container maxWidth='lg'>
         <div className={styles.footer__wrap}>
           <div className={styles.footer__left}>
-            <div className={styles.footer__logo}>
-              <img src={imgs.logo} alt='' />
-            </div>
-            <a href='#' className={styles.footer__mail}>
+            <Link to="/" className={styles.footer__logo}>
+              <img src={svgs.logo} alt='' />
+            </Link>
+            <a href='mailto:info@proxies.com' className={styles.footer__mail}>
               info@proxies.com
             </a>
             <div className={styles.footer__socials}>
               <div className={styles.footer__social}>
-                <img src={svgs.mess} alt='' />
+                <img src={svgs.footerFacebook} alt='' />
               </div>
               <div className={styles.footer__social}>
-                <img src={svgs.instagramColor} alt='' />
+                <img src={svgs.footerInstagram} alt='' />
               </div>
               <div className={styles.footer__social}>
-                <img src={svgs.wha} alt='' />
-              </div>
-              <div className={styles.footer__social}>
-                <img src={svgs.face} alt='' />
+                <img src={svgs.footerX} alt='' />
               </div>
             </div>
           </div>
           <div className={styles.footer__right}>
             <ul className={styles.footer__category}>
-              <li>Service and Terms</li>
-              <li>About us</li>
-              <li>Contact</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
-              <li>Terms of Service</li>
-              <li>Delivery Agreement</li>
-              <li>Refund Policy </li>
+              <h6>Service and Terms</h6>
+              <li>
+                <Link to='/about'>About us</Link>
+              </li>
+              <li>
+                <Link to='#'>Contact</Link>
+              </li>
+              <li>
+                <Link to='#'>Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to='#'>Cookie Policy</Link>
+              </li>
+              <li>
+                <Link to='#'>Terms of Service</Link>
+              </li>
+              <li>
+                <Link to='#'>Delivery Agreement</Link>
+              </li>
+              <li>
+                <Link to='#'>Refund Policy</Link>
+              </li>
             </ul>
             <ul className={styles.footer__category}>
-              <li>Proxies</li>
-              <li>Static Residential Proxies</li>
-              <li>Rotate Residential Proxies</li>
+              <h6>Proxies</h6>
+              <li>
+                <Link to='#'>Static Residential Proxies</Link>
+              </li>
+              <li>
+                <Link to='#'>Rotate Residential Proxies</Link>
+              </li>
             </ul>
             <ul className={styles.footer__category}>
-              <li>Affiliate</li>
-              <li>Reseller Program</li>
-              <li>Link Program</li>
+              <h6>Affiliate</h6>
+              <li>
+                <Link to='#'>Reseller Program</Link>
+              </li>
+              <li>
+                <Link to='#'>Link Program</Link>
+              </li>
             </ul>
             <ul className={styles.footer__category}>
-              <li>Help Center</li>
-              <li>FAQ</li>
-              <li>User Guide</li>
-              <li>Tutorial Video</li>
-              <li>Sitemap</li>
+              <h6>Help Center</h6>
+              <li>
+                <Link to='#'>FAQ</Link>
+              </li>
+              <li>
+                <Link to='#'>User Guide</Link>
+              </li>
+              <li>
+                <Link to='#'>Tutorial Video</Link>
+              </li>
+              <li>
+                <Link to='#'>Sitemap</Link>
+              </li>
             </ul>
             <ul className={styles.footer__category}>
-              <li>Case Study</li>
-              <li>Crawl Data</li>
-              <li>SEO Traffic</li>
-              <li>Optimize Web Scraping</li>
-              <li>Automate Tasks That Require IP Rotation</li>
-              <li>Bypass Web Block</li>
-              <li>Bypass Network Traffic</li>
+              <h6>Case Study</h6>
+              <li>
+                <Link to='#'>Crawl Data</Link>
+              </li>
+              <li>
+                <Link to='#'>SEO Traffic</Link>
+              </li>
+              <li>
+                <Link to='#'>Optimize Web Scraping</Link>
+              </li>
+              <li>
+                <Link to='#'>Automate Tasks That Require IP Rotation</Link>
+              </li>
+              <li>
+                <Link to='#'>Bypass Web Block</Link>
+              </li>
+              <li>
+                <Link to='#'>Bypass Network Traffic</Link>
+              </li>
             </ul>
           </div>
         </div>

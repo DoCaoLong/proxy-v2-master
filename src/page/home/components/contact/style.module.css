@@ -1,3 +1,6 @@
+.contact{
+  box-shadow: var(--box-shadown-btn-outlined);
+}
 .contact__title {
   max-width: 544px;
   margin: 0 auto;
