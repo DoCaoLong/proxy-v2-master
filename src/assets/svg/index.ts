@@ -42,8 +42,16 @@ import aboutUs from './about-us.svg'
 import aboutUser from './about-user.svg'
 import minusCirlce from './minus-cirlce.svg'
 import addCircle from './add-circle.svg'
+import footerFacebook from './footer-facebook.svg'
+import footerInstagram from './footer-instagram.svg'
+import footerX from './footer-x.svg'
+import logo from './logo.svg'
 
 export const svgs = {
+  logo,
+  footerFacebook,
+  footerInstagram,
+  footerX,
   minusCirlce,
   addCircle,
   aboutChart,

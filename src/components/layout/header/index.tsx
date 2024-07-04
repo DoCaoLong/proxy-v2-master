@@ -3,10 +3,10 @@ import { Container } from '../container'
 import styles from './style.module.css'
 import { Button } from '../../UI'
 import classNames from 'classnames'
-import { imgs } from '../../../assets/imgs'
 import { LanguageSwitcher } from '../languageSwitcher'
 import { useMediaQuery } from '@mui/material'
 import { Link, useLocation } from 'react-router-dom'
+import { svgs } from '../../../assets/svg'
 
 export function Header() {
   const headerRef = useRef<HTMLDivElement | null>(null)
@@ -65,7 +65,7 @@ export function Header() {
                 <span className={styles.line}></span>
               </div>
               <Link to='/' className={styles.navbarLogo}>
-                <img src={imgs.logo} alt='logo' />
+                <img src={svgs.logo} alt='logo' />
               </Link>
             </div>
 
