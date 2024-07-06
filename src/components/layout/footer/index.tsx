@@ -107,6 +107,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className={styles.footer__bottom}>
+          <p>© Copyright 2024 NETProxy.IO. All rights reserved.</p>
+        </div>
       </Container>
     </section>
   )
