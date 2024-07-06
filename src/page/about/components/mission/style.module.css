@@ -23,6 +23,10 @@
   background: var(--white-cl);
   box-shadow: var(--box-shadown-1);
 }
+.item__img {
+  width: 100px;
+  height: 100px;
+}
 .item__img img {
   width: 100%;
   height: 100%;

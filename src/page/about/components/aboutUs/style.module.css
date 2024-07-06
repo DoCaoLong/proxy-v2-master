@@ -52,7 +52,8 @@
     flex-direction: column;
   }
   .aboutUs__img {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .aboutUs__text {
     font-size: 36px;
