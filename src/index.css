@@ -20,6 +20,7 @@
   --box-shadown-focus-input: 0px 0px 12px 0px rgba(228, 31, 4, 0.5);
   --border-cl-1: #dae7e7;
   --border-cl-2: #e0e0e0;
+  --line-cl: #e0ebeb;
 
   --container-xl: calc(1920px + 30px);
   --container-lg: calc(1200px + 30px);
