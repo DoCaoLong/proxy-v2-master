@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 import { Container } from '../../../../components/layout'
-import { svgs } from '../../../../assets/svg'
+import { gif } from '../../../../assets/gif'
 export function Mission() {
   return (
     <section className={styles.mission}>
@@ -10,7 +10,7 @@ export function Mission() {
         <div className={styles.list}>
           <div className={styles.item}>
             <div className={styles.item__img}>
-              <img src={svgs.aboutUser} alt='' />
+              <img src={gif.user} alt='' />
             </div>
             <div className={styles.item__content}>
               <h4>Online privacy</h4>
@@ -24,7 +24,7 @@ export function Mission() {
           </div>
           <div className={styles.item}>
             <div className={styles.item__img}>
-              <img src={svgs.aboutChart} alt='' />
+              <img src={gif.chart} alt='' />
             </div>
             <div className={styles.item__content}>
               <h4>Data leadership</h4>
