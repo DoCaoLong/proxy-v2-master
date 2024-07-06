@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 import { Container } from '../../../../components/layout'
-import { svgs } from '../../../../assets/svg'
+import { gif } from '../../../../assets/gif'
 export function Strengths() {
   interface IData {
     id: number
@@ -14,19 +14,19 @@ export function Strengths() {
     {
       id: 1,
       name: 'We Specialize in IP Networking',
-      img: svgs.aboutHome,
+      img: gif.home,
       desc: 'Check out 922S5 for all your IP address needs! 922proxy.com is the go-to global proxy provider, famous for their privacy know-how and a whopping 200 million residential IP addresses across 190+ countries.'
     },
     {
       id: 2,
       name: 'Trust 922S5 For Fast,Reliable IP Proxy Servic',
-      img: svgs.aboutStart,
+      img: gif.start,
       desc: 'Check out 922S5 for all your IP address needs! 922proxy.com is the go-to global proxy provider, famous for their privacy know-how and a whopping 200 million residential IP addresses across 190+ countries.'
     },
     {
       id: 3,
       name: 'We Offer More than Just IP Proxy',
-      img: svgs.aboutPen,
+      img: gif.pen,
       desc: 'Check out 922S5 for all your IP address needs! 922proxy.com is the go-to global proxy provider, famous for their privacy know-how and a whopping 200 million residential IP addresses across 190+ countries.'
     }
   ]

@@ -7,8 +7,10 @@ import { LanguageSwitcher } from '../languageSwitcher'
 import { useMediaQuery } from '@mui/material'
 import { Link, useLocation } from 'react-router-dom'
 import { svgs } from '../../../assets/svg'
+import { useTranslation } from 'react-i18next'
 
 export function Header() {
+  const { t } = useTranslation()
   const headerRef = useRef<HTMLDivElement | null>(null)
   const [width, setWidth] = useState('1200px')
   const IS_MB = useMediaQuery('(max-width:767px)')
@@ -76,7 +78,7 @@ export function Header() {
                   to='#'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  Pricing
+                  {t('header.pricing')}
                 </Link>
               </li>
               <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
@@ -85,7 +87,7 @@ export function Header() {
                   to='#'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  Proxies
+                  {t('header.proxies')}
                 </Link>
               </li>
               <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
@@ -94,7 +96,7 @@ export function Header() {
                   to='#'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  Case study
+                  {t('header.caseStudy')}
                 </Link>
               </li>
               <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
@@ -103,7 +105,7 @@ export function Header() {
                   to='#'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  Affiliate
+                  {t('header.affiliate')}
                 </Link>
               </li>
               <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '/download' })}>
@@ -112,7 +114,7 @@ export function Header() {
                   to='/download'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  Download
+                  {t('header.download')}
                 </Link>
               </li>
               <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '/about' })}>
@@ -121,7 +123,7 @@ export function Header() {
                   to='/about'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  About us
+                  {t('header.aboutUs')}
                 </Link>
               </li>
               <li className={classNames(styles.navbarMenuItem, { [styles.active]: location.pathname === '#' })}>
@@ -130,7 +132,7 @@ export function Header() {
                   to='#'
                   className={classNames(styles.navbarMenuLink, styles.textSM)}
                 >
-                  Contact
+                  {t('header.contact')}
                 </Link>
               </li>
               <li className={styles.navbarMenuItem}>
@@ -142,7 +144,7 @@ export function Header() {
           </div>
           <div className={styles.navbarMenuBtns}>
             {!IS_MB && <LanguageSwitcher />}
-            <Button variant={width === '1070px' ? 'contained' : 'outlined'}>Login Dashboard</Button>
+            <Button variant={width === '1070px' ? 'contained' : 'outlined'}>{t('header.loginDashboard')}</Button>
           </div>
         </div>
       </Container>

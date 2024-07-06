@@ -1,4 +1,4 @@
-.download{
+.download {
   background-color: var(--grey-cl);
 }
 .download__wrap {
@@ -10,7 +10,7 @@
   justify-content: center;
   gap: 24px;
 }
-.download h2{
+.download h2 {
   max-width: 577px;
   margin: 0 auto;
 }
@@ -42,7 +42,7 @@
   transition: all 0.3s ease;
 }
 .download__text {
-  font-family: Figtree;
+  /* font-family: Figtree; */
   font-size: 49px;
   font-style: normal;
   font-weight: 600;

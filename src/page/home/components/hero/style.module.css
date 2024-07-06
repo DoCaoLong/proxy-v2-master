@@ -13,7 +13,7 @@
   width: 100%;
 }
 .hero__title {
-  font-family: Figtree;
+  /* font-family: Figtree; */
   font-size: 61px;
   font-style: normal;
   font-weight: 600;
@@ -55,7 +55,7 @@
   gap: 8px;
 }
 .hero__item__name {
-  font-family: Figtree;
+  /* font-family: Figtree; */
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
