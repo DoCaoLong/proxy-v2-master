@@ -3,10 +3,11 @@
   --secondary-cl: rgba(252, 174, 94, 0.9);
   --tertiary-cl: rgba(243, 62, 95, 1); /*f33e5f*/
   --black-cl: rgba(9, 19, 39, 1); /*091327*/
-  --gray-cl: rgba(136, 148, 157, 1); /*88949D*/
+  --gray-cl: rgba(104, 116, 126, 1); /*68747E*/
   --white-cl: rgba(255, 255, 255, 1); /*FFF*/
   --orange-cl: rgba(246, 137, 47, 1); /*F6892F*/
   --orange-text-cl: rgba(255, 84, 30, 1); /*FF541E*/
+  --black-blue-cl: rgba(8, 22, 57, 1); /*081639*/
 
   --grey-cl: rgba(249, 249, 249, 1); /*f9f9f9*/
 
@@ -92,7 +93,7 @@ section {
   display: block;
 }
 h2 {
-  font-family: Figtree;
+  /* font-family: Figtree; */
   font-size: 34px;
   font-style: normal;
   font-weight: 600;

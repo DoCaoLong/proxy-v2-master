@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from './style.module.css'
 import { svgs } from '../../../assets/svg'
+import { imgs } from '../../../assets/imgs'
 
 export const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation()
@@ -23,7 +24,7 @@ export const LanguageSwitcher: React.FC = () => {
         className={styles.languageInput}
       />
       <label htmlFor='en' className={styles.flag}>
-        <img src={svgs.uk} alt='English' />
+        <img src={svgs.us} alt='English' />
       </label>
 
       <input
@@ -36,7 +37,7 @@ export const LanguageSwitcher: React.FC = () => {
         className={styles.languageInput}
       />
       <label htmlFor='vi' className={styles.flag}>
-        <img src={svgs.china} alt='Tiếng Việt' />
+        <img src={imgs.vietnamFlag} alt='Tiếng Việt' />
       </label>
     </div>
   )

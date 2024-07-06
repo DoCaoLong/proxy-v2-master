@@ -1,3 +1,6 @@
+.top h2 {
+  text-align: left;
+}
 .top__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -21,7 +24,7 @@
   letter-spacing: 0.16px;
 }
 .top__total {
-  font-family: Figtree;
+  /* font-family: Figtree; */
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -29,6 +32,9 @@
 }
 
 @media screen and (max-width: 767.98px) {
+  .top h2 {
+    text-align: center;
+  }
   .top__list {
     gap: 15px;
   }

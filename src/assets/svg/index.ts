@@ -46,8 +46,10 @@ import footerFacebook from './footer-facebook.svg'
 import footerInstagram from './footer-instagram.svg'
 import footerX from './footer-x.svg'
 import logo from './logo.svg'
+import logoDark from './logo-dark.svg'
 
 export const svgs = {
+  logoDark,
   logo,
   footerFacebook,
   footerInstagram,

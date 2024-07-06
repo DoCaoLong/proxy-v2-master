@@ -1,16 +1,16 @@
 {
   "choose": {
     "chooseYourPlan": "Chọn kế hoạch của bạn",
-    "residentialProxies": "Proxy cư trú",
-    "description": "Mở khóa sức mạnh của các proxy cư trú với các giải pháp tiên tiến của chúng tôi được điều chỉnh cho nhu cầu duyệt web của bạn. Trải nghiệm sự ẩn danh liền mạch và đáng tin cậy với các dịch vụ proxy chất lượng cao của chúng tôi.",
-    "userCases": "Các trường hợp sử dụng",
+    "residentialProxies": "Residential Proxies",
+    "description": "Mở khóa sức mạnh của proxy cư trú với các giải pháp tiên tiến của chúng tôi được tùy chỉnh cho nhu cầu duyệt web của bạn. Trải nghiệm ẩn danh mượt mà và đáng tin cậy với dịch vụ proxy chất lượng cao của chúng tôi.",
+    "userCases": "Trường hợp sử dụng",
     "adVerification": "Xác minh quảng cáo",
     "serpTracking": "Theo dõi SERP",
     "socialMedia": "Mạng xã hội",
     "brandProtection": "Bảo vệ thương hiệu",
     "planPriceStartFrom": "Giá kế hoạch bắt đầu từ",
     "highQuality": "Chất lượng cao",
-    "countryTargeting": "Nhắm mục tiêu quốc gia",
+    "countryTargeting": "quốc gia được nhắm mục tiê u",
     "dedicatedResidentialProxies": "Proxy cư trú dành riêng",
     "httpSupport": "Hỗ trợ HTTP(s) và SOCKS5",
     "nonExpiringTraffic": "Lưu lượng không hết hạn",
@@ -38,32 +38,32 @@
     "downloadNow": "Tải xuống ngay"
   },
   "hear": {
-    "hearAboutUs": "Nghe về chúng tôi",
+    "hearAboutUs": "Về chúng tôi",
     "ethicallySourced": "100M+ Proxy cư trú có nguồn gốc hợp pháp",
     "largeProxyPool": "Một số lượng lớn proxy có nghĩa là bạn có quyền truy cập vào các địa chỉ IP cư trú từ khắp nơi trên thế giới, vì vậy bạn có thể dễ dàng vượt qua các khối địa lý."
   },
   "hero": {
-    "title": "Proxy cư trú P2P",
+    "title": "Proxy P2P",
     "subtitle": "Chia sẻ internet và kiếm tiền trực tuyến",
-    "description": "Chúng tôi cung cấp nền tảng trao đổi proxy hàng đầu thế giới với hỗ trợ kết nối P2P. Chia sẻ Internet của bạn và Kiếm tiền trực tuyến dễ dàng.",
+    "description": "Chúng tôi cung cấp nền tảng trao đổi proxy hàng đầu thế giới với hỗ trợ kết nối P2P. Chia sẻ Internet Của Bạn và Kiếm Tiền Trực Tuyến Dễ Dàng.",
     "getStarted": "Bắt đầu",
     "asSeenOn": "Được thấy trên:",
     "proxyTransparent": "Proxy trong suốt",
-    "proxyTransparentDesc": "Đảm bảo quyền riêng tư bằng cách không ghi lại hoạt động của người dùng. Tối ưu hóa lưu lượng mạng và cải thiện trải nghiệm người dùng.",
-    "noUsageLogs": "Không có nhật ký sử dụng",
-    "noUsageLogsDesc": "Tối đa hóa tốc độ để có trải nghiệm duyệt web tối ưu với thời gian phản hồi nhanh hơn.",
-    "highSpeed": "Tốc độ cao",
-    "highSpeedDesc": "Proxy trong suốt là giải pháp lý tưởng cho những ai muốn nâng cao bảo mật và quản lý mạng."
+    "proxyTransparentDesc": "Một Proxy Trong suốt là một giải pháp lý tưởng cho những người muốn tăng cường bảo mật và quản lý mạng.",
+    "noUsageLogs": "Không ghi nhật ký sử dụng",
+    "noUsageLogsDesc": "Đảm bảo quyền riêng tư bằng cách không ghi lại hoạt động của người dùng. Tối ưu hóa lưu lượng mạng và cải thiện trải nghiệm người dùng.",
+    "highSpeed": "Không ghi nhật ký sử dụng",
+    "highSpeedDesc": "Tối đa hóa tốc độ để có trải nghiệm duyệt web tối ưu với thời gian ping thấp hơn để có phản hồi nhanh hơn."
   },
   "our": {
-    "featuresServices": "Các tính năng và dịch vụ của chúng tôi",
-    "description": "Chúng tôi mang đến cho bạn một dịch vụ proxy Peer-to-Peer (P2P) sáng tạo, không chỉ cải thiện trải nghiệm duyệt web của bạn",
+    "featuresServices": "Tính năng & Dịch vụ của Chúng tôi",
+    "description": "Chúng tôi mang đến cho bạn dịch vụ proxy Peer-to-Peer (P2P) đầy sáng tạo không chỉ nâng cao trải nghiệm duyệt web của bạn ",
     "monetizeYourBandwidth": "Kiếm tiền từ băng thông của bạn",
     "monetizeDesc": "Kiếm tiền bằng cách chia sẻ băng thông internet không sử dụng của bạn.",
-    "proxyP2PResidential": "Proxy cư trú P2P",
-    "proxyP2PDesc": "Dịch vụ proxy P2P của chúng tôi cho phép bạn kiếm tiền từ kết nối của mình một cách dễ dàng.",
+    "proxyP2PResidential": "Proxy P2P",
+    "proxyP2PDesc": "Dịch vụ proxy P2P của chúng tôi cho phép bạn kiếm tiền từ kết nối một cách dễ dàng.",
     "secureAndPrivate": "Bảo mật và riêng tư",
-    "secureDesc": "Tất cả dữ liệu truyền qua các proxy P2P của chúng tôi đều được mã hóa, đảm bảo rằng thông tin cá nhân của bạn được bảo vệ."
+    "secureDesc": "Tất cả dữ liệu đi qua các proxy P2P của chúng tôi đều được mã hóa, đảm bảo thông tin cá nhân của bạn được bảo vệ. "
   },
   "proxy": {
     "title": "Trường hợp sử dụng Proxy",
@@ -92,5 +92,15 @@
     "germany": "Đức",
     "canada": "Canada",
     "france": "Pháp"
+  },
+  "header": {
+    "pricing": "Giá cả",
+    "proxies": "Proxy",
+    "caseStudy": "Nghiên cứu điển hình",
+    "affiliate": "Liên kết",
+    "download": "Tải về",
+    "aboutUs": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "loginDashboard": "Đăng nhập"
   }
 }

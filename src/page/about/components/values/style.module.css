@@ -12,7 +12,7 @@
   object-fit: cover;
 }
 .item__content h3 {
-  font-family: 'Figtree';
+  /* font-family: 'Figtree'; */
   font-size: 34px;
   font-style: normal;
   font-weight: 600;

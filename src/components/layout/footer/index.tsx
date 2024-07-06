@@ -8,8 +8,8 @@ export default function Footer() {
       <Container maxWidth='lg'>
         <div className={styles.footer__wrap}>
           <div className={styles.footer__left}>
-            <Link to="/" className={styles.footer__logo}>
-              <img src={svgs.logo} alt='' />
+            <Link to='/' className={styles.footer__logo}>
+              <img src={svgs.logoDark} alt='' />
             </Link>
             <a href='mailto:info@proxies.com' className={styles.footer__mail}>
               info@proxies.com

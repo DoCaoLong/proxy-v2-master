@@ -16,8 +16,10 @@ import windown from './windown.png'
 import youtube from './youtube.png'
 import logo from './logo.png'
 import choseBb from './chose-bg.png'
+import vietnamFlag from './vietnam.png'
 
 export const imgs = {
+  vietnamFlag,
   choseBb,
   logo,
   usercase,

@@ -1,5 +1,6 @@
 .footer {
-  background-color: var(--grey-cl);
+  background-color: var(--black-blue-cl);
+  color: var(--white-cl);
 }
 .footer__top {
   padding-bottom: 16px;
@@ -13,25 +14,32 @@
   cursor: pointer;
 }
 
-.footer__category li:not(:first-child) {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 15.6px */
-  letter-spacing: 0.26px;
-  padding: 8px 0;
-  cursor: pointer;
-}
 .footer__category h6 {
-  font-family: "Figtree";
+  /* font-family: 'Figtree'; */
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 160%; /* 32px */
   margin-bottom: 8px;
 }
+.footer__category li a {
+  opacity: 0.7;
+  color: var(--white-cl);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 15.6px */
+  letter-spacing: 0.26px;
+  cursor: pointer;
+  padding: 8px 0;
+  display: inline-block;
+}
+.footer a {
+  color: var(--white-cl);
+}
 .footer__category li a:hover {
   color: var(--primary-cl);
+  opacity: 1;
 }
 .footer__mail {
   font-size: 16px;
@@ -44,7 +52,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
 }
 .footer__social {
   cursor: pointer;
@@ -53,7 +60,7 @@
   background-color: var(--white-cl);
   box-shadow: var(--box-shadown-btn-outlined);
 }
-.footer__social{
+.footer__social {
   width: 40px;
   height: 40px;
 }
@@ -90,7 +97,7 @@
   }
   .footer__wrap {
     flex-direction: column;
-    gap:24px;
+    gap: 24px;
   }
   .footer__left {
     width: 100%;

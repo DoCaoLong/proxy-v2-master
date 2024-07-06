@@ -93,5 +93,15 @@
     "canada": "Canada",
     "france": "France",
     "totalIPs": "{{count}} IPs"
+  },
+  "header": {
+    "pricing": "Pricing",
+    "proxies": "Proxies",
+    "caseStudy": "Case Study",
+    "affiliate": "Affiliate",
+    "download": "Download",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "loginDashboard": "Login Dashboard"
   }
 }

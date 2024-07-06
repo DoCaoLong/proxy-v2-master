@@ -5,6 +5,7 @@
   background: var(--gradient-cl);
   padding: 6px;
   border-radius: 100px;
+  flex-shrink: 0;
 }
 
 .languageInput {
